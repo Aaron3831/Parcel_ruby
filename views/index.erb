@@ -3,15 +3,26 @@
 <form action="/parcel">
   <div class="form-group">
     <label for="length">First Length</label>
-    <input id="length" type="text" name="length" class="form-control">
+    <input id="length" type="number" name="length" class="form-control">
   </div>
   <div class="form-group">
-    <label for="width">Second Length</label>
-    <input id="width" type="text" name="width" class="form-control">
+    <label for="width">How wide is your box?</label>
+    <input id="width" type="number" name="width" class="form-control">
   </div>
   <div class="form-group">
-    <label for="height">Third Length</label>
-    <input id="height" type="text" name="height" class="form-control">
+    <label for="height">How tall is your package?</label>
+    <input id="height" type="number" name="height" class="form-control">
   </div>
+  <div class="form-group">
+    <label for="weight">How much does your package weigh?</label>
+    <input id="weight" type="number" name="weight" class="form-control">
+  </div>
+  <div>
+  <select class="form-control" id="speed" name ="speed">
+    <option value = 2>2 Day</option>
+    <option value = 7>1 Week</option>
+    <option value = 10>10 Days</option>
+  </select>
+</div>
   <button type="submit" class="btn-primary">Go!</button>
 </form>
